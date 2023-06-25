@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>Solar Vision</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css"/>
+</head>
+<h1 align="center">Solar Vision</h3><q>
+
+<body>
+
+<form align="center" method="post"
+action="{{ url_for('index') }}">
+ 
+<table align="center">
+<col style="width: 50%;" />
+
+<col style="width: 50%;" />
+<tr>
+<th>City:</th>
+<td align="center">
+  <select id="City" name="City">
+    <option value="hyderabad">Hyderabad</option>
+    <option value="delhi">Delhi</option>
+    <option value="banglore">Bangalore</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="Jaipur">Jaipur</option>
+    <option value="kanpur">Kanpur</option>
+    <option value="nagpur">Nagpur</option>
+    <option value="pune">Pune</option>
+  </select>
+</tr><p>
+<tr>
+<th><label for="area">Area of panels (in square meters)</label></th>
+<td align="center">
+<input type="number" name="area" id="area" placeholder="Area of panels" min="0"/><br><br></td></tr>
+<tr><th><label for="cost">Cost of 1 unit electricity</label></th>
+    <td align="center">
+<input type="number" class="rupee" name="unit_current" id="unit_current" name="Unit_Current" placeholder="per KWH" min="0"><br><br></td>    
+    </tr>
+<tr>
+    <th><label for="installation">Cost of installation</label></th>
+    <td align="center">
+        <input type="number" id="installation" name="installation" class="rupee" placeholder="Enter the cost" min="0"/><br><br></td></tr>
+    </td>
+</tr>
+<tr>
+  <th><label for="bill">Last month electricity bill</label></th>
+  <td align="center">
+      <input type="number" id="bill" name="bill" class="rupee" placeholder="Enter bill amount" min="0"/><br><br></td></tr>
+  </td>
+</tr>
+<td colspan="2" align="center">
+<button><input value="SUBMIT" size="30">
+</button>
+</td>
+
+</table>
+</body>
+</form>
+</html>

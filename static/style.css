@@ -1,0 +1,42 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://media.istockphoto.com/id/1310384629/photo/solar-panel-cell-on-dramatic-sunset-sky-background-clean-alternative-power-energy-concept.jpg?b=1&s=170667a&w=0&k=20&c=6PFVI-Ek0jrcEYkiAXyuD-RUTvGnadNgLny8ChXAve4=");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+
+p{
+  margin-top: 200px;
+}
+input,select{
+  width: 100%;
+  font-size: 20px solid #aaa;
+  padding: 8px;
+  border-radius: 4px;
+  font-style:inherit;
+  box-sizing: border-box;
+}
+
+th{
+  font-size:20px;
+  text-align: left;
+}
+button{
+  justify-content: center;
+  margin-top:2%;
+  color: chartreuse;
+}
+.rupee[type="number"] {
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.rupee[type="number"]::after {
+  content: "₹";
+  float: left;
+  margin-left: 5px;
+}
